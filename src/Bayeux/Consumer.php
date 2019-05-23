@@ -36,7 +36,6 @@ class Consumer implements ConsumerInterface
         return $this->priority;
     }
 
-
     public static function create(callable $callable, ?int $priority = null): Consumer
     {
         return new static($callable, $priority);
